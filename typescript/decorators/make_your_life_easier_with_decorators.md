@@ -95,7 +95,7 @@ function simpleDecorator(message: string): MethodDecorator {
 }
 ```
 
-This will throw an error if the message is empty:
+This will throw an error as soon as you run the codes:
 
 ```typescript
 class ServiceA {
@@ -177,7 +177,7 @@ class Logger {
   }
 
   public log(message: string) {
-    console.log(`[${this.instance}] ${message}`);
+    process.stdout.write(`[${this.instance}] ${message}\n`);
   }
 }
 

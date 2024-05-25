@@ -85,7 +85,7 @@ class Logger {
   }
 
   public log(message: string) {
-    console.log(`[${this.instance}] ${message}`);
+    process.stdout.write(`[${this.instance}] ${message}\n`);
   }
 
   public decoratorFunctionPerformance({ message }: { message?: string }) {
