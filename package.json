@@ -1,6 +1,18 @@
 {
+  "scripts": {
+    "db:migrate": "./make db:migrate",
+    "db:migrate:undo": "./make db:migrate:undo",
+    "db:migrate:undo:all": "./make db:migrate:undo:all",
+    "db:dump:update": "./make db:dump:update",
+    "db:dump:restore": "./make db:dump:restore"
+  },
   "devDependencies": {
     "@types/node": "^20.12.12",
+    "sequelize-cli": "^6.6.2",
     "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "pg": "^8.11.5",
+    "sequelize": "^6.37.3"
   }
 }
