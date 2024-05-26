@@ -1,5 +1,4 @@
 #!/bin/sh
-# v1.0.0
 
 case ${1} in
   "db:migrate")
