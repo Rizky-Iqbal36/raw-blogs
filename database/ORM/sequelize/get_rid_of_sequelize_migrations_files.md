@@ -1,4 +1,4 @@
-# Get Rid of Sequelize Migration Files
+# Get Rid of Migration Files
 
 I once join a team that using postgres and sequelize as their ORM, and they have dozens of migration files, when i try to migrate those files, i got a lot of error that saying the same problem coming from migration files.
 
