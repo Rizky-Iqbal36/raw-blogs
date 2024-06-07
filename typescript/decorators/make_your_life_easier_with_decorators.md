@@ -8,6 +8,23 @@ In TypeScript, decorator is a special type of declaration that uses the `@` symb
 
 Decorators were initially introduced as an experimental feature in [TypeScript 1.5](https://github.com/microsoft/TypeScript/releases/tag/v1.5.3) in July 2015, and using them required enabling a specific compiler option called `--experimentalDecorators`.
 
+## Why decorator?
+
+![why_decorator](../../assets/memes/why_is_decorator_meme.png)
+
+Using decorators offers several benefits that can greatly enhance the efficiency and readability of your code. Here are some key reasons why decorators are useful:
+
+1. Code Reusability and DRY Principle
+   - <b>Reusability</b>: Decorators allow you to define reusable pieces of code that can be applied across multiple classes or methods. This eliminates the need to write repetitive logic in multiple places.
+   - <b>DRY Principle</b>: By abstracting common functionality into decorators, you adhere to the "Don't Repeat Yourself" principle, reducing code duplication and making your codebase cleaner and easier to maintain.
+2. Separation of Concerns
+
+   Decorators help separate cross-cutting concerns (like logging, authorization, validation, etc.) from the business logic. This keeps your core logic focused and straightforward.
+
+3. Enhanced Readability and Maintainability
+   - <b>Readability</b>: Using decorators makes it clear what additional behaviors or metadata are associated with a class or method. This can make the code more readable and self-documenting.
+   - <b>Maintainability</b>: Since decorators encapsulate specific behaviors, any changes to these behaviors can be made in one place (the decorator itself) rather than scattered throughout the codebase.
+
 ## Getting Started
 
 Make sure TypeScript is installed on your system, or you can install it locally within your specific project.
