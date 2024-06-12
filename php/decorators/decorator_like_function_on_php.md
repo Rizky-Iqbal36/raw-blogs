@@ -125,6 +125,7 @@ class AnotherSimpleDecorator
 }
 $serviceA = new AnotherSimpleDecorator(new SimpleDecorator(new ServiceA()));
 $serviceA->methodA();
+// Output:
 // [AnotherDecorator:Before] Hello
 // [Decorator:Before] Hello
 // Method Triggered
@@ -207,7 +208,7 @@ now we have `BaseDecorator` this make us have the power to control decorator's b
 
 Also, we added `registerMethods` to `BaseDecorator`, this method serves two purpose:
 
-1.  This method ensures that every decorator's target has a method called `handler`, which will serve as decorator's logic, handler method have a paremeter `$original_method`, representing the original method that the class tryng to call.
+1.  This method ensures that every decorator has a method called `handler`, which will serve as decorator's logic, handler method have a paremeter `$original_method`, representing the original method that the class tryng to call.
 2.  This method renames all the methods from the `$target` class that match the `$include_methods` config by prefixing them with "\_\_", with the help of `runkit7` extension. This ensures that when a method from a class with the applied decorator is called, it will trigger the `__call` method.
 
 > **_NOTE:_**
@@ -397,6 +398,7 @@ $serviceA->methodA();
 // [Decorator:After] Hi
 // [AnotherDecorator:After] Hi
 ```
+Solution Three full code: [here](./solutionThree.php)
 
 <b>Conclusion</b>, Solution three make decorators stackable but when it come to stacked decorator the declaration become ugly.
 
